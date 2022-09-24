@@ -1,0 +1,1 @@
+Testing for writing a string to file.

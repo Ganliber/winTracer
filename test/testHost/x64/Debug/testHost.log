@@ -1,0 +1,10 @@
+﻿  main.cpp
+E:\Github\detour\winTracer\test\testHost\main.cpp(209,74): warning C4267: “参数”: 从“size_t”转换到“DWORD”，可能丢失数据
+E:\Github\detour\winTracer\test\testHost\main.cpp(195,8): warning C4101: “pBuffer”: 未引用的局部变量
+E:\Github\detour\winTracer\test\testHost\main.cpp(257,91): warning C4267: “参数”: 从“size_t”转换到“DWORD”，可能丢失数据
+E:\Github\detour\winTracer\test\testHost\main.cpp(299,56): warning C4129: “M”: 不可识别的字符转义序列
+E:\Github\detour\winTracer\test\testHost\main.cpp(299,56): warning C4129: “W”: 不可识别的字符转义序列
+E:\Github\detour\winTracer\test\testHost\main.cpp(299,56): warning C4129: “C”: 不可识别的字符转义序列
+E:\Github\detour\winTracer\test\testHost\main.cpp(299,56): warning C4129: “R”: 不可识别的字符转义序列
+E:\Github\detour\winTracer\test\testHost\main.cpp(358,54): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  testHost.vcxproj -> E:\Github\detour\winTracer\test\testHost\x64\Debug\testHost.exe

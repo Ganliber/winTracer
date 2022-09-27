@@ -1,3 +1,0 @@
-﻿  send.cpp
-E:\Github\detour\winTracer\test\testSendData\send.cpp(38,54): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-  testSendData.vcxproj -> E:\Github\detour\winTracer\test\testSendData\x64\Debug\testSendData.exe

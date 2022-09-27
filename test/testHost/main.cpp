@@ -32,14 +32,16 @@ int main() {
 		//cin >> op;
 		//scanf("%d", &op);
 		for (int op = 0; op <= 15; op++) {
-				if (op == 8 ||		// recv
-					op == 9 ||		// send
-					op == 10||		// heap double free
-					op == 15		// memory copy
-					) 
-					continue;
-				std::cout << endl << op << " ..." << endl << endl;
-				switch (op)
+				//if (op == 8 ||		// recv
+				//	op == 9 ||		// send
+				//	op == 10||		// heap double free
+				//	op == 15		// memory copy
+				//	) 
+				//	continue;
+				
+			std::cout << endl << op << " ..." << endl << endl;
+				
+			switch (op)
 				{
 					// exit
 				case 0: {
@@ -85,11 +87,11 @@ int main() {
 					break;
 				}
 				case 9: {
-					recvData();
+					sendData();
 					break;
 				}
 				case 10: {
-					sendData();
+					recvData();
 					break;
 				}
 				
@@ -110,7 +112,7 @@ int main() {
 					break;
 				}
 				case 15: {
-					memoryOperation();
+					//memoryOperation();
 					break;
 				}
 			}
@@ -265,6 +267,7 @@ void regCreateAndSetValue() {
 	}
 	RegCloseKey(hKey);
 }
+
 void regOpenAndDelValue() {
 	HKEY hKey = NULL;
 	size_t lRet = RegOpenKeyEx(HKEY_CURRENT_USER, (LPWSTR)L"aaaMykey", 0, KEY_ALL_ACCESS, &hKey);
@@ -284,16 +287,17 @@ void regOpenAndDelValue() {
 	RegCloseKey(hKey);
 }
 
-
 void modifyExProgram() {
 	HANDLE hOpenFile = (HANDLE)CreateFile(L"a.exe", GENERIC_READ | GENERIC_WRITE, FILE_SHARE_READ, NULL, CREATE_ALWAYS, NULL, NULL);
 	CloseHandle(hOpenFile);
 }
+
 void selfReplication() {
 	//testCode.exe
 	HANDLE hOpenFile = (HANDLE)CreateFile(L"testCode.exe", GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_ALWAYS, NULL, NULL);
 	CloseHandle(hOpenFile);
 }
+
 void modifyStartupRegistry() {
 	HKEY hKey = NULL;
 	size_t lRet = RegOpenKeyEx(HKEY_CURRENT_USER, (LPWSTR)L"SOFTWARE\Microsoft\Windows\CurrentVersion\Run", 0, KEY_READ, &hKey);
@@ -305,6 +309,7 @@ void modifyStartupRegistry() {
 	}
 	RegCloseKey(hKey);
 }
+
 void openAnotherFolder() {
 	HANDLE hOpenFile = (HANDLE)CreateFile(L".\\testFolder\\a.txt", GENERIC_READ | GENERIC_WRITE, FILE_SHARE_READ, NULL, CREATE_ALWAYS, NULL, NULL);
 	CloseHandle(hOpenFile);
@@ -314,8 +319,10 @@ void recvData() {
 	//初始化DLL
 	WSADATA wsaData;
 	WSAStartup(MAKEWORD(2, 2), &wsaData);
+	std::cout << "初始化成功" << endl;
 	//创建套接字
 	SOCKET sock = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP);
+	std::cout << "创建套接字成功" << endl;
 	//向服务器发起请求
 	sockaddr_in sockAddr;
 	memset(&sockAddr, 0, sizeof(sockAddr));  //每个字节都用0填充
@@ -323,7 +330,7 @@ void recvData() {
 	sockAddr.sin_addr.s_addr = inet_addr("127.0.0.1");
 	sockAddr.sin_port = htons(1234);
 	connect(sock, (SOCKADDR*)&sockAddr, sizeof(SOCKADDR));
-	Sleep(500);
+	//Sleep(500);
 	//接收服务器传回的数据
 	char szBuffer[MAXBYTE] = { 0 };
 	recv(sock, szBuffer, MAXBYTE, NULL);
@@ -334,6 +341,7 @@ void recvData() {
 	//终止使用 DLL
 	WSACleanup();
 }
+
 void sendData() {
 	//初始化 DLL
 	WSADATA wsaData;
@@ -346,9 +354,9 @@ void sendData() {
 	sockAddr.sin_family = PF_INET;  //使用IPv4地址
 	sockAddr.sin_addr.s_addr = inet_addr("127.0.0.1");  //具体的IP地址
 	sockAddr.sin_port = htons(1234);  //端口
-	bind(servSock, (SOCKADDR*)&sockAddr, sizeof(SOCKADDR));
+	//bind(servSock, (SOCKADDR*)&sockAddr, sizeof(SOCKADDR));
 	//进入监听状态
-	listen(servSock, 20);
+	//listen(servSock, 20);
 	//接收客户端请求
 	SOCKADDR clntAddr;
 	int nSize = sizeof(SOCKADDR);
@@ -362,6 +370,7 @@ void sendData() {
 	//终止 DLL 的使用
 	WSACleanup();
 }
+
 void memoryOperation() {
 	getchar();
 	char temp[100] = "";

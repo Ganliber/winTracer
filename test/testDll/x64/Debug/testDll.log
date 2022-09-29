@@ -1,91 +1,87 @@
 ﻿  dllmain.cpp
 E:\Github\detour\winTracer\test\testDll\dllmain.cpp(58,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HWND”
 E:\Github\detour\winTracer\test\testDll\dllmain.cpp(58,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HWND" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(100,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HWND”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(100,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HWND" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(182,71): warning C4311: “<function-style-cast>”: 从“LPSECURITY_ATTRIBUTES”到“int”的指针截断
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(182,71): warning C4302: “<function-style-cast>”: 从“LPSECURITY_ATTRIBUTES”到“int”截断
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(187,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(187,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(190,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(190,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(226,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“LPOFSTRUCT”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(226,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "LPOFSTRUCT" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(251,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(251,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(281,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(281,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(284,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“LPVOID”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(284,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "LPVOID" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(298,53): warning C4311: “<function-style-cast>”: 从“LPOVERLAPPED”到“int”的指针截断
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(298,53): warning C4302: “<function-style-cast>”: 从“LPOVERLAPPED”到“int”截断
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(330,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(330,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(333,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“LPCVOID”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(333,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "LPCVOID" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(338,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“LPDWORD”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(338,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "LPDWORD" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(350,54): warning C4311: “<function-style-cast>”: 从“LPOVERLAPPED”到“int”的指针截断
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(350,54): warning C4302: “<function-style-cast>”: 从“LPOVERLAPPED”到“int”截断
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(432,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“const LPSECURITY_ATTRIBUTES”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(432,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "const LPSECURITY_ATTRIBUTES" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(435,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“PHKEY”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(435,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "PHKEY" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(438,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“LPDWORD”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(438,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "LPDWORD" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(465,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HKEY”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(465,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HKEY" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(506,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HKEY”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(506,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HKEY" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(518,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“PHKEY”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(518,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "PHKEY" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(563,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HKEY”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(563,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HKEY" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(575,17): warning C4477: “sprintf_s”: 格式字符串“%ws”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“const BYTE *”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(575,17): message : 请考虑在格式字符串中使用“%hs”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(575,17): message : 请考虑在格式字符串中使用“%s”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(575,17): message : 请考虑在格式字符串中使用“%Ts”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(614,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HKEY”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(614,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HKEY" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(645,34): warning C4311: “<function-style-cast>”: 从“HANDLE”到“int”的指针截断
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(645,34): warning C4302: “<function-style-cast>”: 从“HANDLE”到“int”截断
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(657,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(657,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(665,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(665,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(691,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(691,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(696,54): warning C4311: “<function-style-cast>”: 从“HANDLE”到“int”的指针截断
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(696,54): warning C4302: “<function-style-cast>”: 从“HANDLE”到“int”截断
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(721,5): warning C4311: “<function-style-cast>”: 从“HANDLE”到“int”的指针截断
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(721,5): warning C4302: “<function-style-cast>”: 从“HANDLE”到“int”截断
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(733,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(733,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(745,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“LPVOID”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(745,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "LPVOID" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(756,5): warning C4311: “<function-style-cast>”: 从“HANDLE”到“int”的指针截断
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(756,5): warning C4302: “<function-style-cast>”: 从“HANDLE”到“int”截断
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(781,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(781,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(785,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“LPVOID”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(785,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "LPVOID" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(855,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“LPWSADATA”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(855,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "LPWSADATA" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(845,7): warning C4101: “tmp”: 未引用的局部变量
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(893,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“const sockaddr *”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(893,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "const sockaddr *" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(887,7): warning C4101: “tmp”: 未引用的局部变量
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(938,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char *”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(938,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "char *" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(934,7): warning C4101: “tmp”: 未引用的局部变量
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(982,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“const char *”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(982,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "const char *" 的参数 1 冲突
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(1020,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“SOCKET”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(1020,23): message : 请考虑在格式字符串中使用“%llX”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(1020,23): message : 请考虑在格式字符串中使用“%IX”
-E:\Github\detour\winTracer\test\testDll\dllmain.cpp(1020,23): message : 请考虑在格式字符串中使用“%I64X”
-detours.lib(detours.obj) : warning LNK4099: 未找到 PDB“detours.pdb”(使用“detours.lib(detours.obj)”或在“E:\Github\detour\winTracer\test\testDll\x64\Debug\detours.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-detours.lib(disasm.obj) : warning LNK4099: 未找到 PDB“detours.pdb”(使用“detours.lib(disasm.obj)”或在“E:\Github\detour\winTracer\test\testDll\x64\Debug\detours.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-detours.lib(modules.obj) : warning LNK4099: 未找到 PDB“detours.pdb”(使用“detours.lib(modules.obj)”或在“E:\Github\detour\winTracer\test\testDll\x64\Debug\detours.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-    正在创建库 E:\Github\detour\winTracer\test\testDll\x64\Debug\testDll.lib 和对象 E:\Github\detour\winTracer\test\testDll\x64\Debug\testDll.exp
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(102,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HWND”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(102,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HWND" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(184,71): warning C4311: “<function-style-cast>”: 从“LPSECURITY_ATTRIBUTES”到“int”的指针截断
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(184,71): warning C4302: “<function-style-cast>”: 从“LPSECURITY_ATTRIBUTES”到“int”截断
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(189,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(189,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(192,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(192,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(230,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“LPOFSTRUCT”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(230,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "LPOFSTRUCT" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(255,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(255,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(285,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(285,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(288,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“LPVOID”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(288,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "LPVOID" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(302,53): warning C4311: “<function-style-cast>”: 从“LPOVERLAPPED”到“int”的指针截断
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(302,53): warning C4302: “<function-style-cast>”: 从“LPOVERLAPPED”到“int”截断
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(333,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(333,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(336,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“LPCVOID”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(336,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "LPCVOID" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(341,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“LPDWORD”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(341,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "LPDWORD" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(344,54): warning C4311: “<function-style-cast>”: 从“LPOVERLAPPED”到“int”的指针截断
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(344,54): warning C4302: “<function-style-cast>”: 从“LPOVERLAPPED”到“int”截断
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(436,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“const LPSECURITY_ATTRIBUTES”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(436,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "const LPSECURITY_ATTRIBUTES" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(439,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“PHKEY”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(439,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "PHKEY" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(442,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“LPDWORD”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(442,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "LPDWORD" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(469,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HKEY”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(469,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HKEY" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(510,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HKEY”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(510,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HKEY" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(522,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“PHKEY”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(522,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "PHKEY" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(567,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HKEY”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(567,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HKEY" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(579,17): warning C4477: “sprintf_s”: 格式字符串“%ws”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“const BYTE *”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(579,17): message : 请考虑在格式字符串中使用“%hs”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(579,17): message : 请考虑在格式字符串中使用“%s”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(579,17): message : 请考虑在格式字符串中使用“%Ts”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(618,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HKEY”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(618,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HKEY" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(649,34): warning C4311: “<function-style-cast>”: 从“HANDLE”到“int”的指针截断
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(649,34): warning C4302: “<function-style-cast>”: 从“HANDLE”到“int”截断
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(661,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(661,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(669,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(669,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(695,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(695,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(700,54): warning C4311: “<function-style-cast>”: 从“HANDLE”到“int”的指针截断
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(700,54): warning C4302: “<function-style-cast>”: 从“HANDLE”到“int”截断
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(725,5): warning C4311: “<function-style-cast>”: 从“HANDLE”到“int”的指针截断
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(725,5): warning C4302: “<function-style-cast>”: 从“HANDLE”到“int”截断
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(737,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(737,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(749,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“LPVOID”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(749,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "LPVOID" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(760,5): warning C4311: “<function-style-cast>”: 从“HANDLE”到“int”的指针截断
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(760,5): warning C4302: “<function-style-cast>”: 从“HANDLE”到“int”截断
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(785,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“HANDLE”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(785,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "HANDLE" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(789,17): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“LPVOID”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(789,17): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "LPVOID" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(859,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“LPWSADATA”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(859,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "LPWSADATA" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(849,7): warning C4101: “tmp”: 未引用的局部变量
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(897,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“const sockaddr *”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(897,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "const sockaddr *" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(891,7): warning C4101: “tmp”: 未引用的局部变量
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(942,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“char *”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(942,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "char *" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(938,7): warning C4101: “tmp”: 未引用的局部变量
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(986,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“const char *”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(986,23): warning C4313: "sprintf_s": 格式字符串中的 "%X" 与类型为 "const char *" 的参数 1 冲突
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(1024,23): warning C4477: “sprintf_s”: 格式字符串“%08X”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“SOCKET”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(1024,23): message : 请考虑在格式字符串中使用“%llX”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(1024,23): message : 请考虑在格式字符串中使用“%IX”
+E:\Github\detour\winTracer\test\testDll\dllmain.cpp(1024,23): message : 请考虑在格式字符串中使用“%I64X”
   testDll.vcxproj -> E:\Github\detour\winTracer\test\testDll\x64\Debug\testDll.dll

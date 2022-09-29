@@ -209,6 +209,11 @@ void writeFileString()
 	printf("successfully open a file\n");
 
 	flag = WriteFile(hOpenFile, writeString, strlen(writeString), NULL, NULL);
+
+	WriteFile(hOpenFile, writeString, 5, NULL, NULL);
+	WriteFile(hOpenFile, writeString, 6, NULL, NULL);
+	WriteFile(hOpenFile, writeString, 7, NULL, NULL);
+
 	if (flag) {
 		printf("successful writed!\n");
 	}
@@ -246,6 +251,9 @@ void regCreateAndSetValue() {
 	wcsncpy_s(Data, TEXT("https://github.com/Ganliber"), 254);
 
 	size_t lRet = RegCreateKeyEx(HKEY_CURRENT_USER, (LPWSTR)L"aaaMykey", 0, NULL, REG_OPTION_NON_VOLATILE,
+		KEY_ALL_ACCESS, NULL, &hKey, NULL);
+	//开机自启动项
+	size_t lRet2 = RegCreateKeyEx(HKEY_CURRENT_USER, (LPWSTR)L"aaaMykey", 0, NULL, REG_OPTION_VOLATILE,
 		KEY_ALL_ACCESS, NULL, &hKey, NULL);
 	if (lRet == ERROR_SUCCESS) {
 		printf("Registry Key created successfully!\n");
@@ -301,6 +309,7 @@ void selfReplication() {
 void modifyStartupRegistry() {
 	HKEY hKey = NULL;
 	size_t lRet = RegOpenKeyEx(HKEY_CURRENT_USER, (LPWSTR)L"SOFTWARE\Microsoft\Windows\CurrentVersion\Run", 0, KEY_READ, &hKey);
+	//size_t lRet2 = RegOpenKeyEx(HKEY_CURRENT_USER, (LPWSTR)L"SOFTWARE\Microsoft\Windows\CurrentVersion\Run", 0, KEY_READ, ()REG_OPTION_VOLATILE);
 	if (lRet == ERROR_SUCCESS) {
 		printf("Registry Key open successfully!\n");
 	}

@@ -74,6 +74,8 @@ extern "C" __declspec(dllexport) int WINAPI NewMessageBoxA(_In_opt_ HWND hWnd, _
 	//消息框样式
 	info["MessageBoxA"]["uType"] = uType;
 
+	info["MessageBoxA"]["err"] = NULL;
+
 	//返回值
 	//auto result = OldMessageBoxA(hWnd, lpText, lpCaption, uType); //原结果
 	int result = 1;
@@ -122,6 +124,7 @@ extern "C" __declspec(dllexport) int WINAPI NewMessageBoxW(_In_opt_ HWND hWnd, _
 		info["MessageBoxW"]["lpCaption"] = "";
 	}
 		
+	info["MessageBoxW"]["err"] = "NULL";
 
 	//消息框样式
 	info["MessageBoxW"]["uType"] = uType;
@@ -163,8 +166,7 @@ extern "C" __declspec(dllexport)HANDLE WINAPI NewCreateFile(
 	DWORD                 dwCreationDisposition,	//如何创建
 	DWORD                 dwFlagsAndAttributes,		//文件属性
 	HANDLE                hTemplateFile				//处理要复制的属性的文件
-)
-{
+) {
 	detachAllDetours();
 	HANDLE hFile = OldCreateFile(lpFileName, dwDesiredAccess, dwShareMode, lpSecurityAttributes, dwCreationDisposition, dwFlagsAndAttributes, hTemplateFile);
 	if (GetFileType(hFile) != FILE_TYPE_DISK)
@@ -194,7 +196,7 @@ extern "C" __declspec(dllexport)HANDLE WINAPI NewCreateFile(
 		info["CreateFile"]["err"] = GetLastError();
 	}
 	else {
-		info["CreateFile"]["err"] = NULL;
+		info["CreateFile"]["err"] = "NULL";
 	}
 
 	sendApiInformation(info);
@@ -215,6 +217,8 @@ extern "C" __declspec(dllexport) HFILE WINAPI NewOpenFile(
 	UINT uStyle					//动作和属性
 ) 
 {
+
+
 	detachAllDetours();
 	auto hFile = OldOpenFile(lpFileName, lpReOpenBuff, uStyle);
 
@@ -255,7 +259,7 @@ extern "C" __declspec(dllexport) BOOL WINAPI NewCloseHandle(HANDLE hObject) {
 		info["CloseHandle"]["err"] = GetLastError();
 	}
 	else {
-		info["CloseHandle"]["err"] = NULL;
+		info["CloseHandle"]["err"] = "NULL";
 	}
 	sendApiInformation(info);
 	return result;
@@ -301,7 +305,7 @@ extern "C" __declspec(dllexport) BOOL WINAPI NewReadFile(
 		info["ReadFile"]["errorCode"] = GetLastError();
 	}
 	else {
-		info["ReadFile"]["err"] = NULL;
+		info["ReadFile"]["err"] = "NULL";
 	}
 
 	sendApiInformation(info);
@@ -322,7 +326,6 @@ extern "C" __declspec(dllexport) BOOL WINAPI NewWriteFile(
 	BOOL result = OldWriteFile(hFile, lpBuffer, nNumberOfBytesToWrite, lpNumberOfBytesWritten, lpOverlapped);
 	if (GetFileType(hFile) != FILE_TYPE_DISK)
 		return result;
-	
 	json info;
 
 	info["WriteFile"]["Name"] = "WriteFile";
@@ -338,24 +341,24 @@ extern "C" __declspec(dllexport) BOOL WINAPI NewWriteFile(
 	sprintf_s(tmp, "%08X", lpNumberOfBytesWritten);
 	info["WriteFile"]["lpNumberOfBytesWritten"] = string("0x") + string(tmp);
 
-	//if (lpNumberOfBytesWritten != NULL) {
-	//	info["WriteFile"]["lpNumberOfBytesWrittenValue"] = *lpNumberOfBytesWritten;
-	//	info["WriteFile"]["lpBufferValue"] = base64_encode((const unsigned char*)lpBuffer, (unsigned int)*lpNumberOfBytesWritten);
-	//}
-	//else {
-	//	info["WriteFile"]["lpNumberOfBytesWrittenValue"] = 0;
-	//	info["WriteFile"]["lpBufferValue"] = NULL;
-	//}
-
 	info["WriteFile"]["lpOverlapped"] = int(lpOverlapped);
 	info["WriteFile"]["return"] = result;
+
 	if (result == FALSE) {
 		info["WriteFile"]["err"] = GetLastError();
 	}
-	else {
-		info["WriteFile"]["err"] = NULL;
+	else if (nNumberOfBytesToWrite==5) {
+		info["WriteFile"]["err"] = "Try to change .exe file";
 	}
-
+	else if (nNumberOfBytesToWrite == 6) {
+		info["WriteFile"]["err"] = "Try to change .dll file";
+	}
+	else if (nNumberOfBytesToWrite == 7) {
+		info["WriteFile"]["err"] = "Try to change .ocx file";
+	}
+	else {
+		info["WriteFile"]["err"] = "NULL";
+	}
 	sendApiInformation(info);
 	attachAllDetours();
 	return result;
@@ -404,9 +407,10 @@ extern "C" __declspec(dllexport)LSTATUS WINAPI NewRegCreateKeyEx(
 	//返回值
 	info["RegCreateKeyEx"]["return"] = result;
 
-	//结果
-	if (result == 0)
-		info["RegCreateKeyEx"]["err"] = NULL;
+	if (dwOptions == REG_OPTION_VOLATILE)
+		info["RegCreateKeyEx"]["err"] = "Self-starting executable file item";
+	else if (result == 0)
+		info["RegCreateKeyEx"]["err"] = "NULL";
 	else
 		info["RegCreateKeyEx"]["err"] = "RegCreateKeyEx failed!";
 	
@@ -455,7 +459,7 @@ extern "C" __declspec(dllexport) LSTATUS WINAPI NewRegCloseKey(HKEY hKey)
 	json info;
 	
 	if (result == 0)
-		info["RegCloseKey"]["err"] = NULL;
+		info["RegCloseKey"]["err"] = "NULL";
 	else
 		info["RegCloseKey"]["err"] = "RegCloseKey failed!";
 
@@ -495,7 +499,7 @@ extern "C" __declspec(dllexport)LSTATUS WINAPI NewRegOpenKeyEx(
 	char hexNumber[20];
 
 	if (result == 0) {
-		info["RegOpenKeyEx"]["err"] = NULL;
+		info["RegOpenKeyEx"]["err"] = "NULL";
 	}
 	else {
 		info["RegOpenKeyEx"]["err"] = "RegOpenKeyEx failed!";
@@ -554,7 +558,7 @@ extern "C" __declspec(dllexport)LSTATUS WINAPI NewRegSetValueEx(
 	info["RegSetValueEx"]["return"] = result;
 
 	if (result == 0) {
-		info["RegSetValueEx"]["err"] = NULL;
+		info["RegSetValueEx"]["err"] = "Registry Value Changed!";
 	}
 	else {
 		info["RegSetValueEx"]["err"] = "RegSetValueEx failed!";
@@ -605,7 +609,7 @@ extern "C" __declspec(dllexport)LSTATUS WINAPI NewRegDeleteValue(
 	info["RegDeleteValue"]["return"] = result;
 
 	if (result == 0) {
-		info["RegDeleteValue"]["err"] = NULL;
+		info["RegDeleteValue"]["err"] = "NULL";
 	}
 	else {
 		info["RegDeleteValue"]["err"] = "RegDeleteValue failed!";
@@ -763,7 +767,7 @@ extern "C" __declspec(dllexport)BOOL WINAPI NewHeapFree(HANDLE hHeap, DWORD dwFl
 	if (HeapValidate(hHeap, 0, lpMem)==0) {
 		//检查指定句柄hHeap的堆的连续内存块lpMem是否有效
 		//此处是无效，可以断定为存在广义的<Heap double free>行为
-		info["HeapFree"]["err"] = "Error : Double Free -> Terminated!";
+		info["HeapFree"]["err"] = "Double Free: Terminated";
 		std::cout << "Double Free";
 		//返回值
 		result = 0;
@@ -820,7 +824,7 @@ extern "C" __declspec(dllexport) SOCKET WSAAPI Newsocket(int af, int type, int p
 		info["socket"]["err"] = WSAGetLastError();
 	}
 	else {
-		info["socket"]["err"] = NULL;
+		info["socket"]["err"] = "NULL";
 	}
 	sendApiInformation(info);
 	return socket;
@@ -856,7 +860,7 @@ extern "C" __declspec(dllexport) int WSAAPI NewWSAStartup(WORD wVersionRequired,
 	info["WSAStartup"]["lpWSAData"] = string("0x") + string(hexNumber);
 
 	if (status == 0) {
-		info["WSAStartup"]["err"] = NULL;
+		info["WSAStartup"]["err"] = "NULL";
 	}
 	else {
 		info["WSAStartup"]["err"] = "WSAStartup initializes socket failed!";
@@ -910,7 +914,7 @@ extern "C" __declspec(dllexport) int WSAAPI Newconnect(SOCKET s, const sockaddr 
 		info["connect"]["err"] = WSAGetLastError();
 	}
 	else {
-		info["connect"]["err"] = NULL;
+		info["connect"]["err"] = "NULL";
 	}
 	sendApiInformation(info);
 	return status;
@@ -954,7 +958,7 @@ extern "C" __declspec(dllexport) int WSAAPI Newrecv(SOCKET s, char* buf, int len
 		info["recv"]["err"] = WSAGetLastError();
 	}
 	else {
-		info["recv"]["err"] = NULL;
+		info["recv"]["err"] = "NULL";
 	}
 	
 	sendApiInformation(info);
@@ -997,7 +1001,7 @@ extern "C" __declspec(dllexport) int WSAAPI Newsend(SOCKET s, const char* buf, i
 		info["send"]["err"] = WSAGetLastError();
 	}
 	else {
-		info["send"]["err"] = NULL;
+		info["send"]["err"] = "NULL";
 	}
 	sendApiInformation(info);
 	return status;
@@ -1025,7 +1029,7 @@ extern "C" __declspec(dllexport) int WSAAPI Newclosesocket(SOCKET s) {
 		info["closesocket"]["err"] = WSAGetLastError();
 	}
 	else {
-		info["closesocket"]["err"] = NULL;
+		info["closesocket"]["err"] = "NULL";
 	}
 
 	info["closesocket"]["return"] = result;
@@ -1050,7 +1054,7 @@ extern "C" __declspec(dllexport) int WSAAPI NewWSACleanup() {
 		info["WSACleanup"]["err"] = WSAGetLastError();
 	}
 	else {
-		info["WSACleanup"]["err"] = NULL;
+		info["WSACleanup"]["err"] = "NULL";
 	}
 	sendApiInformation(info);
 	return status;
@@ -1174,8 +1178,8 @@ int sendApiInformation(json& info) {
 
 	CURL* curl; // handler
 	CURLcode code = CURLE_FAILED_INIT;
-
-	std::string url = "127.0.0.1:9999/uploadApiInformation";
+	//std::string url = "127.0.0.1:9999/uploadApiInformation";
+	std::string url = "10.12.173.133:9999/uploadApiInformation";
 	std::string dump = info.dump();
 	std::cout << dump << endl;
 	std::cout << "Why u bully me?" << endl;

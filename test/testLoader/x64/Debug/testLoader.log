@@ -1,8 +1,0 @@
-﻿  main.cpp
-E:\Github\detour\winTracer\test\testLoader\main.cpp(14,72): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-E:\Github\detour\winTracer\test\testLoader\main.cpp(16,68): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-detours.lib(creatwth.obj) : warning LNK4099: 未找到 PDB“detours.pdb”(使用“detours.lib(creatwth.obj)”或在“E:\Github\detour\winTracer\test\testLoader\x64\Debug\detours.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-detours.lib(modules.obj) : warning LNK4099: 未找到 PDB“detours.pdb”(使用“detours.lib(modules.obj)”或在“E:\Github\detour\winTracer\test\testLoader\x64\Debug\detours.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-detours.lib(detours.obj) : warning LNK4099: 未找到 PDB“detours.pdb”(使用“detours.lib(detours.obj)”或在“E:\Github\detour\winTracer\test\testLoader\x64\Debug\detours.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-detours.lib(disasm.obj) : warning LNK4099: 未找到 PDB“detours.pdb”(使用“detours.lib(disasm.obj)”或在“E:\Github\detour\winTracer\test\testLoader\x64\Debug\detours.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-  testLoader.vcxproj -> E:\Github\detour\winTracer\test\testLoader\x64\Debug\testLoader.exe

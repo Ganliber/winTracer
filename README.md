@@ -18,7 +18,7 @@ Program API calling tracer in windows implemented by detour.
 
 ### How to run this project
 
-* Download the release file and follow [Deployment](s).
+* Download the release file and follow [Deployment](https://github.com/Ganliber/winTracer/tree/main/src).
 * The source cpp files are under folder `/src/test`，while the core files `dllmain.cpp`, `loader.cpp`, `host.cpp` are under folder `/src/hook`, source go files are under folder `/src/server`.
 
 ### Dependencies and libraries

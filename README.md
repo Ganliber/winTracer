@@ -14,7 +14,7 @@ Program API calling tracer in windows implemented by detour.
 
 * Frontend and backend design framework :
 
-  ![framwork](image/winTracer.png)
+  <img src="image/winTracer.png" alt="framwork" style="zoom: 67%;" />
 
 ### How to run this project
 
